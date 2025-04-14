@@ -2,6 +2,7 @@
 A bot for meshtastic nodes - **UNSUPPORTED**
 
 **I coded this bot in the passing, so take it or leave it. Cheers.**
+**Attention: The bot will not work, if you do not read the instructions below closely**
 
 # Install
 ## Install dependencies (venv recommended)
