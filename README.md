@@ -1,5 +1,7 @@
-# nodebot
-A bot for meshtastic nodes
+# Nodebot
+A bot for meshtastic nodes - **UNSUPPORTED**
+
+**I coded this bot in the passing, so take it or leave it. Cheers.**
 
 # Install
 ## Install dependencies (venv recommended)
