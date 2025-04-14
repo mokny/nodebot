@@ -59,8 +59,8 @@ exit 0
 * greetings - Sometimes (!) the bot answers a greeting
 
 ## Admin (Commands work in admin channel only)
-* /ban <id> - Ban a user from the bot (the user can not issue any commandy) and the messages do not appear in the history API
-* /unban <id> - Self explaining
+* /ban {12345677890} - Ban a user from the bot (the user can not issue any commandy) and the messages do not appear in the history API
+* /unban {12345677890} - Self explaining
 * /banlist - List banned users
 * /weathertest - Works in admin channel, tests weather retrieval
 * /reboot - reboots the server (yep the server, not the bot)
