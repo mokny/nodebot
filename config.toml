@@ -1,0 +1,128 @@
+[connection]
+wifiip = '' #Leave blank for serial connection
+
+[commands]
+ping = '/ping'
+stats = '/stats'
+info = '/info'
+warnings = '/warnungen'
+echo = '/echo'
+test = 'test'
+help = '/help'
+
+[general]
+botname = 'My MT Bot'
+boturl = 'https://myurl.de'
+groupurl = 'https://t.me/meshnrw'
+fetchtimeout = 20
+maxlength = 150
+maxqueue = 15
+senddelay = 8
+throttle = 5
+admins = ['3519270969','4238376912','2715527857']
+dmresponse = 'Sorry, I am just a bot. Talk to s.o. else.'
+chanexit = true
+
+[apiserver]
+host = '0.0.0.0'
+enabled = true
+port = 42101
+logging = false
+history = 80
+tokens = ['funkyapikeyforhomeassistant']
+
+[channels]
+private = [1]
+info = [1,2]
+ignore = [0]
+admin = 1
+
+[badwords]
+enabled = true
+file = 'badwords.txt'
+
+[weather]
+enabled = true
+url = 'https://weatherurl'
+split_left = 'leftsplit'
+split_right = 'rightsplit'
+name = 'Mein-Wetter'
+sourcename = 'Wetterprovider'
+fetchinterval = 1800
+
+[cron.'08:00']
+    'sendwebresult' = 'weather'
+    'sendchannel' = 6
+
+[cron.'13:00']
+    'sendwebresult' = 'weather'
+    'sendchannel' = 6
+
+[ninawarnings]
+enabled = true
+keyurl = 'https://regionalkeysurl.json'
+state = '05'
+fetchinterval = 600
+regionkeys = ['051110000000', '051120000000', '051130000000', '051140000000', '051160000000', '051170000000', '051190000000', '051200000000', '051220000000', '051240000000', '051540000000', '051580000000', '051620000000', '051660000000', '051700000000', '053140000000', '053150000000', '053160000000', '053340000000', '053580000000', '053620000000', '053660000000', '053700000000', '053740000000', '053780000000', '053820000000', '055120000000', '055130000000', '055150000000', '055540000000', '055580000000', '055620000000', '055660000000', '055700000000', '057110000000', '057540000000', '057580000000', '057620000000', '057660000000', '057700000000', '057740000000', '059110000000', '059130000000', '059140000000', '059150000000', '059160000000', '059540000000', '059580000000', '059620000000', '059660000000', '059700000000', '059740000000', '059780000000']
+dashurljson = 'https://ninaapidashboardurl/'
+detailurljson = 'https://ninaapiwarningsurl/'
+
+[ninawarnings.regionnames]
+    '05111'= 'Düsseldorf'
+    '05112'= 'Duisburg'
+    '05113'= 'Essen'
+    '05114'= 'Krefeld'
+    '05116'= 'Mönchengladbach'
+    '05117'= 'Mülheim a.d. Ruhr'
+    '05119'= 'Oberhausen'
+    '05120'= 'Remscheid'
+    '05122'= 'Solingen'
+    '05124'= 'Wuppertal'
+    '05154'= 'Kreis Kleve'
+    '05158'= 'Kreis Mettmann'
+    '05162'= 'Rhein-Kreis-Neuss'
+    '05166'= 'Kreis Viersen'
+    '05170'= 'Kreis Wesel'
+    '05100'= 'Düsseldorf'
+    '05314'= 'Bonn'
+    '05315'= 'Köln'
+    '05316'= 'Leverkusen'
+    '05334'= 'Städteregion Aachen'
+    '05358'= 'Kreis Düren'
+    '05362'= 'Rhein-Erft-Kreis'
+    '05366'= 'Kreis Euskirchen'
+    '05370'= 'Kreis Heinsberg'
+    '05374'= 'Oberbergischer Kreis'
+    '05378'= 'Rheinisch-Bergischer Kreis'
+    '05382'= 'Rhein-Sieg-Kreis'
+    '05500'= 'Münster'
+    '05512'= 'Bottrop'
+    '05513'= 'Gelsenkirchen'
+    '05515'= 'Münster'
+    '05554'= 'Kreis Borken'
+    '05558'= 'Kreis Coesfeld'
+    '05562'= 'Kreis Recklinghausen'
+    '05566'= 'Kreis Steinfurt'
+    '05570'= 'Kreis Warendorf'
+    '05700'= 'Detmold'
+    '05711'= 'Bielefeld'
+    '05754'= 'Kreis Gütersloh'
+    '05758'= 'Kreis Herford'
+    '05762'= 'Kreis Höxter'
+    '05766'= 'Kreis Lippe'
+    '05770'= 'Kreis Minden-Lübbecke'
+    '05774'= 'Kreis Paderborn'
+    '05900'= 'Arnsberg'
+    '05911'= 'Bochum'
+    '05913'= 'Dortmund'
+    '05914'= 'Hagen'
+    '05915'= 'Hamm'
+    '05916'= 'Herne'
+    '05954'= 'Ennepe-Ruhr-Kreis'
+    '05958'= 'Hochsauerlandkreis'
+    '05962'= 'Märkischer Kreis'
+    '05966'= 'Kreis Olpe'
+    '05970'= 'Kreis Siegen-Wittgenstein'
+    '05974'= 'Kreis Soest'
+    '05978'= 'Kreis Unna'
+
