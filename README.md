@@ -21,7 +21,7 @@ Write down the channel indexes. Press Ctrl+C several times to exit
 ```
 nano config.toml
 ```
-Edit the channels section, set private admin and infochannels. Edit other values on your behalf. In general section set ```chanexit``` to ```false```. Save the file and run with ```python nodebot.py```
+Edit the channels section, set private admin and infochannels. You will see all channel indexes at the first start of the bot. Edit other values on your behalf. In general section set ```chanexit``` to ```false```. Save the file and run with ```python nodebot.py```
 
 # Advanced configuration in config.toml
 ## Weather
