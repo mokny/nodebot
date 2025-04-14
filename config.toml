@@ -42,7 +42,7 @@ enabled = true
 file = 'badwords.txt'
 
 [weather]
-enabled = true
+enabled = false
 url = 'https://weatherurl'
 split_left = 'leftsplit'
 split_right = 'rightsplit'
@@ -59,7 +59,7 @@ fetchinterval = 1800
     'sendchannel' = 6
 
 [ninawarnings]
-enabled = true
+enabled = false
 keyurl = 'https://regionalkeysurl.json'
 state = '05'
 fetchinterval = 600
