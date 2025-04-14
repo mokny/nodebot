@@ -33,7 +33,7 @@ Find a weather service, open the source code of the url that contains the text, 
 ## NINA Warnings
 This is available in Germany only.
 You need the 2-digit code of your state. Enter it into ninawarnings.state. You need an online json file containing all region keys. Enter that url into ninawarnings.keyurl. Now you need the URL to the NINA-Dashboard. Enter it into ninawarnings.dashurljson with a trailing slash. DO NOT include a filename like 12345.json. Now you need the URL to the NINA-Warning-Details. Enter it into ninawarnings.detailurljson with a trailing slash. DO NOT include a filename like 12345.json. Under [ninawarnings.regionnames] add the regionkey and the corresponding Name of each "Landkreis".
-Enable the service.
+Enable the service. There is no warranty for reliability, correctness and completeness of this warning system. Use on own risk.
 
 # Run on startup on a RPi
 If not already done, enable the rc.local service. Thereafter edit/create the file ```/etc/rc.local```:
