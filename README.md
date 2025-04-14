@@ -5,12 +5,9 @@ A bot for meshtastic nodes - **UNSUPPORTED**
 **Attention: The bot will not work, if you do not read the instructions below closely**
 
 # Install
-## Install dependencies (venv recommended)
-```
-pipx install "meshtastic[cli]"
-pipx install flask
-pipx install toml
-```
+## Install python dependencies (venv recommended)
+You need ```meshtastic[cli]```, ```flask```, ```toml```
+
 
 ## First Run 
 If you connect via WiFi to the node, you must edit the file ```config.toml``` first and enter the IP-Address of the node. If you use a serial connection, you can skip this step.
