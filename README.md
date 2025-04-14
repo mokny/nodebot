@@ -42,4 +42,24 @@ exit 0
 ```
 (Adjust the paths)
 
+# Commands
+## Public
+* /info - Bot information
+* /warnings - See list of warnings
+* /stats - Bot statistics
+* /ping - Request a pong
+* /help - Help
+* /echo <text> - Requet an echo response
+
+## Responses
+* test - Bot responds with a test message
+* greetings - Sometimes (!) the bot answers a greeting
+
+## Admin (Commands work in admin channel only)
+* /ban <id> - Ban a user from the bot (the user can not issue any commandy) and the messages do not appear in the history API
+* /unban <id> - Self explaining
+* /banlist - List banned users
+* /weathertest - Works in admin channel, tests weather retrieval
+* /reboot - reboots the server (yep the server, not the bot)
+
 
