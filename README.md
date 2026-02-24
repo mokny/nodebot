@@ -1,3 +1,5 @@
+# Deprecated - New version available here: https://github.com/mokny/meshbot
+
 # Nodebot
 A bot for meshtastic nodes - **UNSUPPORTED**
 
